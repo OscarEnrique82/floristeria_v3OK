@@ -1,0 +1,36 @@
+/* Just some base styles not needed for example to function */
+*, html { font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+html, body { height: 100%; width: 100%; }
+body, form, ul, li, p, h1, h2, h3, h4, h5
+{
+	margin: 0;
+	padding: 0;
+}
+body { background-color: #606061; color: #ffffff; display: table; }
+img { border: none; }
+p
+{
+	font-size: 1em;
+	margin: 0 0 1em 0;
+}
+	
+/*  Orientation styles */
+h1
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+	h1 span { display: none; }
+
+/* Portrait */
+@media screen and (max-width: 320px)
+{
+	h1 span:nth-child(1) { display: inline; }
+}
+/* Landscape */
+@media screen and (min-width: 321px)
+{
+	h1 span:nth-child(2) { display: inline; }
+}
